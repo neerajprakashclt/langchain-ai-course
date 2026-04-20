@@ -18,7 +18,7 @@ def main():
     summary_prompt_template = PromptTemplate.from_template(summary_template)
 
     llm = ChatOllama(
-        model="gemma3:270m",
+        model="llama3.2:1b",
         temperature=0)
     
     chain = summary_prompt_template | llm
